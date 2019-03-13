@@ -31,3 +31,4 @@ Timeline inventions is a game in which players form a timeline by guessing what 
 # Acknowledgement
 ***
 - How to randomize (shuffle) a JavaScript array? by [CoolAJ86](https://stackoverflow.com/a/2450976)
+- Icons courtesy of [flaticon](https://www.flaticon.com/)
