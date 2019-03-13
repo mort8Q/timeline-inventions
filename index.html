@@ -1,0 +1,201 @@
+<!-- Timeline Inventions game using w3c CSS classes-->
+<!DOCTYPE html>
+<html>
+<title>Timeline Inventions!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="./css/main.css">
+
+<body>
+
+  <!-- NAVIGATION BAR-->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#home" class="w3-bar-item w3-button"><b>Timeline</b> Inventions!</a>
+
+      <!-- Navigation Links floated to the right-->
+      <div class="w3-right w3-hide-small">
+        <a href="#projects" class="w3-bar-item w3-button">Home</a>
+        <a href="#about" class="w3-bar-item w3-button">Instructions</a>
+        <a href="#contact" class="w3-bar-item w3-button">Start Game</a>
+      </div>
+    </div>
+  </div>
+
+  </header>
+
+
+  <!-- Main Content -->
+  <div class="w3-content w3-padding" style="max-width:1564px">
+
+    <!-- LANDING PAGE -->
+    <div class="w3-container w3-padding-32" id="landing">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Timeline Inventions</h3>
+    </div>
+
+    <!-- Images -->
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:90%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:90%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:90%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:90%">
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:89%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:89%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:89%">
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-display-container">
+          <div class="w3-display-topleft w3-black w3-padding"></div>
+          <img src="" alt="House" style="width:89%">
+        </div>
+      </div>
+    </div>
+
+    <!-- INSTRUCTIONS -->
+    <div class="w3-container w3-padding-32" id="instructions">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Instructions</h3>
+      <p>Timeline inventions is a game in which
+        players form a timeline by guessing what
+        an inventions dates back to.
+      </p>
+
+      <ul>
+        <li>
+          <p>Each player gets 5 cards</p>
+        </li>
+        <li>
+          <p>Each card has two sides</p>
+        </li>
+        <li>
+          <p>side has the invention name and image</p>
+        </li>
+        <li>
+          <p>side has the invention name, image and date it was invented</p>
+        </li>
+        <li>
+          <p>Player only sees the first side</p>
+        </li>
+        <li>
+          <p>One random card is placed into the playground</p>
+        </li>
+        <li>
+          <p>A player chooses a card and guesses the invention date</p>
+        </li>
+        <li>
+          <p>A player places the card before or after the first card in the playground depending on the date</p>
+        </li>
+        <li>
+          <p>If date is correct, turn is switched otherwise player takes a new random card</p>
+        </li>
+        <li>
+          <p>Player wins when he has no more cards to play</p>
+        </li>
+      </ul>
+    </div>
+
+
+    <!--  GAME -->
+    <div class="main">
+      <div class="w3-container w3-padding-28" id="game">
+        <div class="w3-container w3-padding-32" id="">
+          <h3 class="w3-border-bottom w3-border-light-grey w3-padding-10">Game</h3>
+          <nav>
+            <button class="w3-bar-item w3-button" id='new-game'>New Game</button>
+            <div>
+              <p>Player-1</p>
+            </div>
+            <div id='player-1-indicator' class='indicator'>
+
+            </div>
+            <div>
+              <p>Player-2</p>
+            </div>
+            <div id='player-2-indicator' class='indicator'>
+
+            </div>
+            <div class="w3-bar-item w3-button" id='links'>
+              <a href="#instructions" class="w3-bar-item w3-button">Instructions</a>
+              <a href="#landing" class="w3-bar-item w3-button">Home</a>
+            </div>
+        </div>
+
+        </nav>
+        <!--section player2 -->
+        <section class='player-2'>
+          <!-- player2 cards-->
+          <div class='card'>
+          </div>
+
+        </section>
+
+        <!-- section playground-->
+        <section class='playground'>
+        </section>
+
+        <!-- section player1 -->
+        <section class='player-1'>
+          <!-- player1 cards-->
+          <div class='card'>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+    <!-- End page content -->
+  </div>
+
+
+  <!--Footer -->
+  <footer class="w3-center w3-black w3-padding-16">
+    <p>Find me on <a href="https://www.linkedin.com/in/mortajaalqassab/" title="LinkedIn" target="_blank" class="w3-hover-text-green">LinkedIn</a></p>
+  </footer>
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.6/lib/draggable.bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="./cards.js"></script>
+  <script src='./main.js'></script>
+</body>
+
+</html>
